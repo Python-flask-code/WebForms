@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+ {% block title %}
+        <title>Register</title>
+ {% endblock %}
+
+ {% block body %}
+        <body>
+        {% include "navbar.html" %}
+        <div class="jumbotron">
+            <h3>Yeni Kullanıcı</h3>
+            <form action = "http://127.0.0.1:5000/users" method = "post">
+
+                İsim<br>
+                <input type = "text" name = "name" class="form-control"/></br>
+
+                Soyisim<br>
+                <input type="text" name = "surname" class="form-control"></input><br>
+
+                Kullanıcı Adı<br>
+                <input type = "text" name = "username" class="form-control"/><br>
+
+                Parola<br>
+                <input type = "text" name = "password" class="form-control"/><br>
+                <input type = "submit" value = "Ekle" class="btn btn-success"/><br>
+      </form>
+
+        </div>
+
+        </body>
+ {% endblock %}
